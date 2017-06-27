@@ -41,7 +41,10 @@ namespace llvm{
       errs()<<"Do not go gentle into that good night\n";
       srand (time(NULL));
       //Objective-C Method ClassName Stuff
-      for(auto G=M.getGlobalList().begin();G!=M.getGlobalList().end();G++){
+      
+      //This was legacy code for testing 
+      //Now I'm discarding ObjectiveC SELs in general and dynamically create methods
+      /*for(auto G=M.getGlobalList().begin();G!=M.getGlobalList().end();G++){
         GlobalVariable &GL=*G;
         if (GL.getName().str().find("OBJC_METH_VAR_NAME_")==0||GL.getName().str().find("OBJC_CLASS_NAME_")==0){
           ConstantDataArray* Initializer=dyn_cast<ConstantDataArray>(GL.getInitializer ());
@@ -52,7 +55,7 @@ namespace llvm{
           Initializer->replaceAllUsesWith(Value);
         }
       }
-
+*/
       //Normal Symbols
       for(Module::iterator Fun=M.begin();Fun!=M.end();Fun++){
         Function &F=*Fun;
