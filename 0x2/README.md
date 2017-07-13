@@ -1,4 +1,4 @@
-<http://mayuyu.io/2017/06/02/2017-06-02-LLVMHacking-0x2/>
+<http://mayuyu.io/2017/06/02/LLVMHacking-0x2/>
 
 
 ```
