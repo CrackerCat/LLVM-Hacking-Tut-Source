@@ -1,4 +1,4 @@
-<http://mayuyu.io/2017/06/02/2017-06-01-LLVMHacking-0x1/>
+<http://mayuyu.io/2017/06/02/LLVMHacking-0x1/>
 
 `Binary` is the result example
 
